@@ -2622,6 +2622,31 @@
     body.dark-mode .download-selection-list::-webkit-scrollbar-thumb {
         background: rgba(255, 255, 255, 0.2);
     }
+        /* Fix progress header text colors in dark mode */
+body.dark-mode .progress-header span {
+  color: #0ea5e9;
+}
+
+body.dark-mode #progressText {
+  color: #0ea5e9;
+}
+
+/* Fix filename text color in file selection modal */
+body.dark-mode .history-search-message strong {
+  color: #0ea5e9;
+}
+
+/* Ensure consistent styling for all progress-related text */
+body.dark-mode .progress-header {
+  color: #0ea5e9;
+}
+
+/* If you want to make sure all blue text in dark mode uses your preferred color */
+body.dark-mode .progress-header span,
+body.dark-mode #progressText,
+body.dark-mode .history-search-message strong {
+  color: #0ea5e9 !important;
+}
     </style>
 </head>
 <body>
